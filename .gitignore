@@ -1,0 +1,21 @@
+# Java / Gradle
+.gradle/
+build/
+out/
+*.class
+*.log
+
+# Node / React
+node_modules/
+dist/
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db
