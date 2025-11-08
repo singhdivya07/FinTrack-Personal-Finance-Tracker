@@ -17,6 +17,18 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    // Security + validation
+    implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+
+    // JWT helper (Auth0)
+    implementation("com.auth0:java-jwt:4.4.0")
+
+    // JPA / DB (if not already present)
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+//    runtimeOnly("org.postgresql:postgresql")
+    runtimeOnly("com.h2database:h2")
+
 }
 
 tasks.withType<Test> {
